@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-      <h1>about</h1>
-  </body>
-</html>
+{% extends "projectfeed/index.html" %}
+{% load static %}
+{% block content %}
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Languages and Frameworks</h2>
+        <hr class="my-4">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
+          <h3 class="mb-3">Ruby</h3>
+          <p class="text-muted mb-0">Ruby on Rails</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
+          <h3 class="mb-3">Swift</h3>
+          <p class="text-muted mb-0">Xcode</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
+          <h3 class="mb-3">Python</h3>
+          <p class="text-muted mb-0">Django</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+          <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
+          <h3 class="mb-3">JavaScript</h3>
+          <p class="text-muted mb-0">React.js</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
